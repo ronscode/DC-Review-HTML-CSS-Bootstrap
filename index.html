@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/c54d9432c0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Albert M. Latham | Software Developer </title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav id="home" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="#">Albert M. Latham</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -18,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#recent-projects">Projects</a>
@@ -36,31 +37,34 @@
   <main role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron my-3 jumbo-background">
       <div class="container">
-        <h1 class="display-3">Dev is my Passion</h1>
-        <p>Hello my name is <strong>Albert M. Latham</strong> and I'm a full stack developer located in Anytown USA. My passion is using code to solve real world problems. When not coding I spend my free time hiking and cooking.</p>
+        <h1 class="display-3 text-warning font-weight-bold">Dev is my Passion</h1>
+        <p class="text-light">Hello my name is <strong>Albert M. Latham</strong> and I'm a full stack developer located in Anytown USA. My passion is using code to solve real world problems. When not coding I spend my free time hiking and cooking.</p>
       </div>
     </div>
   
     <div class="container">
-      <h2 id="recent-projects">Recent Projects</h2>
+      <h2 id="recent-projects" class="text-center my-5 py-5 text-uppercase font-weight-bolder bungee">Recent Projects</h2>
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row my-2">
         <div class="col-md-4">
-          <h3>Project 1</h3>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View App &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h3>Project 2</h3>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+           <img src="images/food-delivery-app.jpg" class="img-fluid" alt="Food Delivery App Screenshot">
+          <h3>Food Delivery App</h3>
+          <p>Built with React Native, Express, Ruby on Rails etc etc.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
           <p><a class="btn btn-secondary" href="#" role="button">View Repo &raquo;</a></p>
         </div>
+        <div class="col-md-4 ">
+          <img src="images/photo-sharing-app.jpg" class="img-fluid" alt="Photo Sharing App">
+          <h3>My Photo App</h3>
+          <p>Same as before, list the tech that solved the problem. Sell by showing. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View Site &raquo;</a></p>
+        </div>
         <div class="col-md-4">
-          <h3>Project 3</h3>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View Website &raquo;</a></p>
+          <img src="images/synthesizer-app.jpg" class="img-fluid" alt="Responsive image">
+          <h3>Synth App</h3>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada mollis. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View App &raquo;</a></p>
         </div>
       </div>
   
@@ -71,17 +75,33 @@
 
     <div class="container">
       <!-- Example row of columns -->
-      <h2 id="about">About Me</h2>
+      <h2 id="about" class="text-center my-5 py-5 text-uppercase bungee">About Me</h2>
       <div class="row">
         <div class="col-md-8">
           <h3>Bio</h3>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          
         </div>
         <div class="col-md-4">
           <h3>My Skills</h3>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+         <div class="row">
+           <div class="col"><i class="fab fa-js-square display-3"></i></div>
+           <div class="col"><i class="fab fa-react display-3"></i></i></div>
+           <div class="col"><i class="fab fa-node display-3"></i></i></div>
+         </div>
+
+         <div class="row">
+          <div class="col"><i class="fab fa-html5 display-3"></i></div>
+          <div class="col"><i class="fab fa-css3-alt display-3"></i></div>
+          <div class="col"><i class="fab fa-git-square display-3"></i></i></div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="col"><i class="fab fa-git-square display-3"></i></div>
+          <div class="col"><i class="fab fa-react display-3"></i></i></div>
+          <div class="col"><i class="fab fa-node display-3"></i></i></div>
+        </div> -->
+         
         </div>
       </div>
   
@@ -93,11 +113,15 @@
 
     <div class="container">
       <!-- Example row of columns -->
-      <h2 id="contact">Contact</h2>
+      <h2 id="contact" class="text-center my-5 text-uppercase bungee">Contact</h2>
       <div class="row">
         <div class="col-md-8">
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p>  <i class="far fa-envelope font-weight-bolder"></i>: hello@albertsdomain.com </p>
+          <p><i class="fab fa-linkedin-in font-weight-bolder"></i>: linkedin.com/alberts-profile</p>
+          <p><i class="fab fa-github-alt font-weight-bolder"></i>: github.com/alberts-repos</p>
+
+          <p>Feel free to shoot my an email or message on LinkedIn!</p>
+
         </div>
       </div>
   
